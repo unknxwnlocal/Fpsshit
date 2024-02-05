@@ -1,6 +1,6 @@
 #!/bin/sh
 
-targetFps=10000
+targetFps=120
 robloxPath="/Applications/Roblox.app"
 
 if [ ! -d $robloxPath ]; then
@@ -25,27 +25,7 @@ case $useVulkan in
   yes)
     clientSettings=" \
     { \
-      \"DFIntTaskSchedulerTargetFps\": $targetFps, \
-      \"DFFlagDebugPauseVoxelizer\": \"true\", \
-      \"DFFlagTextureQualityOverrideEnabled\": \"true\", \
-      \"DFIntCSGLevelOfDetailSwitchingDistance\": \"1\", \
-      \"DFIntNewRunningBaseAltitudeD\": \"200\", \
-      \"DFIntNewRunningBaseOrientiationP\": \"460\", \
-      \"FFlagAdServiceEnabled\": \"false\", \
-      \"FFlagDebugDisableTelemetryEphemeralCounter\": \"true\", \
-      \"FFlagDebugDisableTelemetryEphemeralStat\": \"true\", \
-      \"FFlagDebugDisableTelemetryEventIngest\": \"true\", \
-      \"FFlagDebugDisableTelemetryPoint\": \"true\", \
-      \"FFlagDebugDisableTelemetryV2Counter\": \"true\", \
-      \"FFlagDebugDisableTelemetryV2Event\": \"true\", \
-      \"FFlagDebugDisableTelemetryV2Stat\": \"true\", \
-      \"FFlagDebugDisplayFPS\": \"false\", \
-      \"FFlagDisablePostFx\": \"true\", \
-      \"FFlagLuaAppSystemBar\": \"false\", \
-      \"FFlagNewLightAttenuation\": \"true\", \
-      \"FIntFontSizePadding\": \"3\", \
-      \"FIntRenderShadowIntensity\": \"0\", \
-      \"FIntRenderShadowmapBias\": \"0\" \
+      \"DFIntTaskSchedulerTargetFps\": $targetFps \
     } \
     "
     ;;
