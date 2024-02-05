@@ -26,8 +26,6 @@ case $useVulkan in
     clientSettings=" \
     { \
       \"DFIntTaskSchedulerTargetFps\": $targetFps, \
-      \"FFlagDebugGraphicsDisableMetal\": \"true\", \
-      \"FFlagDebugGraphicsPreferVulkan\": \"true\", \
       \"DFFlagDebugPauseVoxelizer\": \"true\", \
       \"DFFlagTextureQualityOverrideEnabled\": \"true\", \
       \"DFIntCSGLevelOfDetailSwitchingDistance\": \"1\", \
